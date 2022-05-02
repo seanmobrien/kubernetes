@@ -6,7 +6,7 @@ resources:
 secretGenerator:
 - name: firefly-iii-secrets
   literals:
-  - db_password=CHANGEMECHANGEME
-  - app_key=CHANGEMECHANGEMECHANGEMECHANGEME
-  - access_token=CHANGEMECHANGEMECHANGEME...
-  - static_cron_token=CHANGE12CHAR
+  - db_password=$(Secrets.DbPassword)
+  - app_key=$(Secrets.AppKey)
+  - access_token=$(Secrets.AccessToken)
+  - static_cron_token=$(Secrets.CronToken)
